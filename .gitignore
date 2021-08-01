@@ -1,0 +1,33 @@
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build
+lib
+
+# temp
+**/tmp
+**/temp
+
+# logs
+*.log
+
+# ide
+.vscode
+.idea
+
+# cache
+.eslintcache
+.cache
+cache
+
+# misc
+*.gz
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

@@ -1,0 +1,9 @@
+{
+  "name": "@monorepo/common",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest src --passWithNoTests",
+    "test:coverage": "jest src --passWithNoTests --coverage"
+  }
+}

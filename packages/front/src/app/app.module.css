@@ -1,0 +1,20 @@
+.nav {
+  padding: 1rem;
+}
+
+.nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+.nav a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.nav a:global(.active) {
+  border-bottom: 1px solid blue;
+}
+
+.main {
+  padding: 1rem;
+}
