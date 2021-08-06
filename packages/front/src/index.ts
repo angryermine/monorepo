@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import { FastifyInstance } from 'fastify';
+import {FastifyInstance} from 'fastify';
 
 const PORT = process.env.PORT || 3000;
 
@@ -9,7 +9,7 @@ function start(instance: FastifyInstance, callback?: (address: string) => void) 
   instance.listen(PORT, (err, address) => {
     if (err) {
       console.error(err);
-    };
+    }
 
     callback?.(address);
   });
