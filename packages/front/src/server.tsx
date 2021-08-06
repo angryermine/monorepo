@@ -57,7 +57,7 @@ server.get('/*', (request, reply) => {
   if (context.url) {
     reply.redirect(context.url);
   } else {
-    const template = 'src/index.ejs';
+    const template = path.join('public', 'views', 'index.ejs');
     reply.view(template, {markup, assets});
   }
 });
