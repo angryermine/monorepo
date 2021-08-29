@@ -8,8 +8,8 @@
     "build": "yarn workspaces foreach -tp run build",
     "lint": "eslint ./packages",
     "start": "yarn workspaces foreach run start",
-    "start:admin": "yarn workspaces @monorepo/admin start",
-    "start:front": "yarn workspaces @monorepo/front start",
+    "start:admin": "yarn workspace @monorepo/admin start",
+    "start:front": "yarn workspace @monorepo/front start",
     "test": "yarn workspaces foreach -p run test",
     "test:coverage": "yarn workspaces foreach -p run test:coverage"
   },
