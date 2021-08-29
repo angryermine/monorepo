@@ -61,7 +61,4 @@ module.exports = {
 
     return webpackConfig;
   },
-  options: {
-    buildType: 'spa',
-  },
 };
