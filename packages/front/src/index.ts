@@ -11,7 +11,7 @@ server.listen(PORT, () => {
 });
 
 if (module.hot) {
-  module.hot.accept('./server', function () {
+  module.hot.accept('./server', () => {
     console.log('🔁 HMR Reloading `./server`...');
 
     try {
