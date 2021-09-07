@@ -1943,19 +1943,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monorepo/admin@workspace:packages/admin"
   dependencies:
-    "@types/react": ^17.0.19
+    "@types/react": ^17.0.20
     "@types/react-dom": ^17.0.9
     "@types/react-router-dom": ^5.1.8
-    babel-preset-razzle: ^4.0.6
+    babel-preset-razzle: ^4.1.0
     concurrently: ^6.2.1
     cross-env: ^7.0.3
     html-webpack-plugin: ^4.5.2
     mini-css-extract-plugin: ^0.9.0
-    razzle: ^4.0.6
-    razzle-dev-utils: ^4.0.6
+    razzle: ^4.1.0
+    razzle-dev-utils: ^4.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
-    react-router-dom: ^5.2.1
+    react-router-dom: ^5.3.0
     tsconfig-paths-webpack-plugin: ^3.5.1
     webpack: ^4.46.0
     webpack-dev-server: ^3.11.2
@@ -1972,23 +1972,23 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monorepo/front@workspace:packages/front"
   dependencies:
-    "@types/react": ^17.0.19
+    "@types/react": ^17.0.20
     "@types/react-dom": ^17.0.9
     "@types/react-router-dom": ^5.1.8
-    babel-preset-razzle: ^4.0.6
+    babel-preset-razzle: ^4.1.0
     concurrently: ^6.2.1
     cross-env: ^7.0.3
     ejs: ^3.1.6
-    fastify: ^3.20.2
+    fastify: ^3.21.0
     fastify-static: ^4.2.3
     html-webpack-plugin: ^4.5.2
     mini-css-extract-plugin: ^0.9.0
     point-of-view: ^4.15.2
-    razzle: ^4.0.6
-    razzle-dev-utils: ^4.0.6
+    razzle: ^4.1.0
+    razzle-dev-utils: ^4.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
-    react-router-dom: ^5.2.1
+    react-router-dom: ^5.3.0
     tsconfig-paths-webpack-plugin: ^3.5.1
     webpack: ^4.46.0
     webpack-dev-server: ^3.11.2
@@ -2285,10 +2285,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.7.6":
-  version: 16.7.6
-  resolution: "@types/node@npm:16.7.6"
-  checksum: a8533386a1d4ca0ed67885413001af8789c63948df288f3d36e31bd8fccffacf5dffb95e190c8cd57bb40385f010fb9a30f596bad6bb26b2bb88737d54d8ed95
+"@types/node@npm:^16.7.13":
+  version: 16.7.13
+  resolution: "@types/node@npm:16.7.13"
+  checksum: 15dc28aa44674d3f49dcca4a6523b6ab1ef9bbea5c659057bec13153e1873718d6b62ab0ea57a3d57ee37f0f1136ae30e3ea503df43b0afa3ae437c8750be7f5
   languageName: node
   linkType: hard
 
@@ -2368,14 +2368,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^17.0.19":
-  version: 17.0.19
-  resolution: "@types/react@npm:17.0.19"
+"@types/react@npm:^17.0.20":
+  version: 17.0.20
+  resolution: "@types/react@npm:17.0.20"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: d5af52623dd863e5a9f64eb72979f19c21e03012e25ee93adc93f664ed7976e81b654128dc653b225ad5ba2aaae24e0febe37face272bb051d6289e23ed7177d
+  checksum: e342bfaa4fe052fc3a445ea49f746f3fd82cfc9c8028eae139a3e0763ead1871f353bd40da2a472f23d2b52544d2781d40e3159c0703e7e2ff08c13f067a3b9c
   languageName: node
   linkType: hard
 
@@ -2482,12 +2482,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^4.29.3":
-  version: 4.29.3
-  resolution: "@typescript-eslint/eslint-plugin@npm:4.29.3"
+"@typescript-eslint/eslint-plugin@npm:^4.31.0":
+  version: 4.31.0
+  resolution: "@typescript-eslint/eslint-plugin@npm:4.31.0"
   dependencies:
-    "@typescript-eslint/experimental-utils": 4.29.3
-    "@typescript-eslint/scope-manager": 4.29.3
+    "@typescript-eslint/experimental-utils": 4.31.0
+    "@typescript-eslint/scope-manager": 4.31.0
     debug: ^4.3.1
     functional-red-black-tree: ^1.0.1
     regexpp: ^3.1.0
@@ -2499,66 +2499,66 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: ded1580fc6348848df3ed92d4365586bf13a05cd698c07aa7727155ca13788b5c33bd326b5435af3e97b702156b1eef811ace20fb5ca44eab6388cecfd8e264a
+  checksum: 3a285a55d493b427644ab864d36b2abc663b1c2707a0bccb748a56e4e8025275025f8268d70dfea7ca2f82fe54a64de4c5634d4552c72a81d6f17a7ab20d5f87
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:4.29.3":
-  version: 4.29.3
-  resolution: "@typescript-eslint/experimental-utils@npm:4.29.3"
+"@typescript-eslint/experimental-utils@npm:4.31.0":
+  version: 4.31.0
+  resolution: "@typescript-eslint/experimental-utils@npm:4.31.0"
   dependencies:
     "@types/json-schema": ^7.0.7
-    "@typescript-eslint/scope-manager": 4.29.3
-    "@typescript-eslint/types": 4.29.3
-    "@typescript-eslint/typescript-estree": 4.29.3
+    "@typescript-eslint/scope-manager": 4.31.0
+    "@typescript-eslint/types": 4.31.0
+    "@typescript-eslint/typescript-estree": 4.31.0
     eslint-scope: ^5.1.1
     eslint-utils: ^3.0.0
   peerDependencies:
     eslint: "*"
-  checksum: 7cd398bf3fccee1c769006c9d28fc0a353c2978cbc33e21449d186ab413ccf5f731b3ac30f557550c1daac767a5b97dce15ec10fe9ad5a632846d285dafac5b0
+  checksum: 24581932c50ae561aa7712ae5966ad962096d7b86efd3c0620080b32ba014fc082394e8475b8e1b5ad5ab19b11383f00dd9469b6b1305913e1eb73182febea6c
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.29.3":
-  version: 4.29.3
-  resolution: "@typescript-eslint/parser@npm:4.29.3"
+"@typescript-eslint/parser@npm:^4.31.0":
+  version: 4.31.0
+  resolution: "@typescript-eslint/parser@npm:4.31.0"
   dependencies:
-    "@typescript-eslint/scope-manager": 4.29.3
-    "@typescript-eslint/types": 4.29.3
-    "@typescript-eslint/typescript-estree": 4.29.3
+    "@typescript-eslint/scope-manager": 4.31.0
+    "@typescript-eslint/types": 4.31.0
+    "@typescript-eslint/typescript-estree": 4.31.0
     debug: ^4.3.1
   peerDependencies:
     eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 3fac6b5219de8b9aea361cc2fa170105661068d5eee5594f2f68526801a66b9525a766fc17427a8d410ada0da2d852f8c021d0b2fac7442a1e913f248ac85d90
+  checksum: 368856dc10ab8ea01f8cd670b48832e20216393a9153b92ee53d4ebba9e1832dfcf1d15b69d76978147f5ac667095bc841eb6211ec71e5a615fbda2a2a689ad4
   languageName: node
   linkType: hard
 
-"@typescript-eslint/scope-manager@npm:4.29.3":
-  version: 4.29.3
-  resolution: "@typescript-eslint/scope-manager@npm:4.29.3"
+"@typescript-eslint/scope-manager@npm:4.31.0":
+  version: 4.31.0
+  resolution: "@typescript-eslint/scope-manager@npm:4.31.0"
   dependencies:
-    "@typescript-eslint/types": 4.29.3
-    "@typescript-eslint/visitor-keys": 4.29.3
-  checksum: 53a4d3cd0844df789ad3548644d9214cf234ce87bbc7843c55949f63e98925b4685b36f0514afbab891b4f8f0da85c249850023be5d5e9b175780aa62d181aac
+    "@typescript-eslint/types": 4.31.0
+    "@typescript-eslint/visitor-keys": 4.31.0
+  checksum: d4739d16af4379227711f626142cd656e078c3501082bb78f970ecf83d9332ac2c02b7e6c73b65515c6d4e9f14786fd34fc383056fecbe527fad62b05751782a
   languageName: node
   linkType: hard
 
-"@typescript-eslint/types@npm:4.29.3":
-  version: 4.29.3
-  resolution: "@typescript-eslint/types@npm:4.29.3"
-  checksum: 26fd2bd6782b763ff6d5ef3bcc08e1d29b64d15ef6f3604203f6171517935d822c103f803d8755c8e0cb77319143e5d5108dc90e8e897c8e72bab9f178be67ce
+"@typescript-eslint/types@npm:4.31.0":
+  version: 4.31.0
+  resolution: "@typescript-eslint/types@npm:4.31.0"
+  checksum: fb6d84efa111b98feaa8b9021b3d225c1d64194fa9b942b9adef39210a4e1ae611aca47b8308dceff7eac847f69474e6926632359180352f5a48f730d827db7c
   languageName: node
   linkType: hard
 
-"@typescript-eslint/typescript-estree@npm:4.29.3":
-  version: 4.29.3
-  resolution: "@typescript-eslint/typescript-estree@npm:4.29.3"
+"@typescript-eslint/typescript-estree@npm:4.31.0":
+  version: 4.31.0
+  resolution: "@typescript-eslint/typescript-estree@npm:4.31.0"
   dependencies:
-    "@typescript-eslint/types": 4.29.3
-    "@typescript-eslint/visitor-keys": 4.29.3
+    "@typescript-eslint/types": 4.31.0
+    "@typescript-eslint/visitor-keys": 4.31.0
     debug: ^4.3.1
     globby: ^11.0.3
     is-glob: ^4.0.1
@@ -2567,17 +2567,17 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: b7ea37db1a2f43806bf16090dfb44c7243ad07b7cb75d398fc2a1ce347fa04a59a5c729a41d1e34862cc3ed60275f5565fe3343393df1c42d95395ed42c761f0
+  checksum: 80d226ab93e133acb19061ee140aaeddd4291a4425638c4f451d43474c3d0b23b39ce1cb6302f0b5c74f585a0cd645ca2240f831093d0a160545c8bb25abb0b9
   languageName: node
   linkType: hard
 
-"@typescript-eslint/visitor-keys@npm:4.29.3":
-  version: 4.29.3
-  resolution: "@typescript-eslint/visitor-keys@npm:4.29.3"
+"@typescript-eslint/visitor-keys@npm:4.31.0":
+  version: 4.31.0
+  resolution: "@typescript-eslint/visitor-keys@npm:4.31.0"
   dependencies:
-    "@typescript-eslint/types": 4.29.3
+    "@typescript-eslint/types": 4.31.0
     eslint-visitor-keys: ^2.0.0
-  checksum: 76d485cb573cfccb8a6aded5b98fd58266c10f82362685d3d0b870e197cbe5e3d61b485e220a7a973765c4861df9ea52a35757ecb818f125e405925556ee1f90
+  checksum: 45a929cfedc922b91526f9cec329a36c86bd3dc42ec2f90a3cdac4ab84ab9569b5fd739db05a3678f6979dead694d9aeadff0a81b208458ad41319482abc5b26
   languageName: node
   linkType: hard
 
@@ -3513,9 +3513,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-razzle@npm:^4.0.6":
-  version: 4.0.6
-  resolution: "babel-preset-razzle@npm:4.0.6"
+"babel-preset-razzle@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "babel-preset-razzle@npm:4.1.0"
   dependencies:
     "@babel/core": ^7.11.1
     "@babel/plugin-proposal-class-properties": ^7.8.3
@@ -3534,7 +3534,7 @@ __metadata:
     babel-plugin-syntax-jsx: ^6.18.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     chalk: ^4.1.0
-  checksum: 6ed4cfbcac9bfe05939b15838a2506a559962313e2c7b3b46e81bbf8ee8c31c22ac5de6438e577a32c5bda604763f28f0085614309b81e595dad6c28daea455c
+  checksum: 588a7544fe36584d5d4fdbd50f71c6705239e5aa44cc8e69b1c7c3e630f833730f8e661a820b826ec237fde40120f649d6fd05abd27d3863fc5cda10776ea817
   languageName: node
   linkType: hard
 
@@ -5841,9 +5841,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.25.0":
-  version: 7.25.0
-  resolution: "eslint-plugin-react@npm:7.25.0"
+"eslint-plugin-react@npm:^7.25.1":
+  version: 7.25.1
+  resolution: "eslint-plugin-react@npm:7.25.1"
   dependencies:
     array-includes: ^3.1.3
     array.prototype.flatmap: ^1.2.4
@@ -5860,7 +5860,7 @@ __metadata:
     string.prototype.matchall: ^4.0.5
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
-  checksum: f4332c2b33e4cb7b3896da63ee8b786c45196524f7da8e06594abb4b2641f9b52d7a4ccf830e5ade73d67aae78ac9d8fb2d1bf33de3e522b4a20a75edb8806b9
+  checksum: e22ffbb6d336558cab38717c8c6199b72635500b9bd909891ba45865adae5846912a2b3daa355b0c1b1bfe6664b28ee277c14943acc739e703316eff87c1fce4
   languageName: node
   linkType: hard
 
@@ -6392,9 +6392,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify@npm:^3.20.2":
-  version: 3.20.2
-  resolution: "fastify@npm:3.20.2"
+"fastify@npm:^3.21.0":
+  version: 3.21.0
+  resolution: "fastify@npm:3.21.0"
   dependencies:
     "@fastify/ajv-compiler": ^1.0.0
     abstract-logging: ^2.0.0
@@ -6412,7 +6412,7 @@ __metadata:
     secure-json-parse: ^2.0.0
     semver: ^7.3.2
     tiny-lru: ^7.0.0
-  checksum: ae02705d72e761784cdc91f681ed3700749641d49f0bec6f4ccae201c6d50593865516ae463136b4e7f7ea7cc82252248fac20ce0f27c77b83bdc3d39493faff
+  checksum: add337be9b60b6894ab21ccad5eb2db2880cbfb1f14aa997087228d4ff6a77645f0b1a09f9dd15c21c26557479ea9f3779db32eaa1ad14c70c1b75f2c9e866c3
   languageName: node
   linkType: hard
 
@@ -10196,14 +10196,14 @@ fsevents@^1.2.7:
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@types/jest": ^26.0.24
-    "@types/node": ^16.7.6
+    "@types/node": ^16.7.13
     "@types/webpack-env": ^1.16.2
-    "@typescript-eslint/eslint-plugin": ^4.29.3
-    "@typescript-eslint/parser": ^4.29.3
+    "@typescript-eslint/eslint-plugin": ^4.31.0
+    "@typescript-eslint/parser": ^4.31.0
     eslint: ^7.32.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^3.4.1
-    eslint-plugin-react: ^7.25.0
+    eslint-plugin-react: ^7.25.1
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-simple-import-sort: ^7.0.0
     husky: ^7.0.2
@@ -12079,9 +12079,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"razzle-dev-utils@npm:^4.0.6":
-  version: 4.0.6
-  resolution: "razzle-dev-utils@npm:4.0.6"
+"razzle-dev-utils@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "razzle-dev-utils@npm:4.1.0"
   dependencies:
     "@babel/code-frame": ^7.8.3
     chalk: ^4.1.0
@@ -12097,22 +12097,22 @@ fsevents@^1.2.7:
   peerDependencies:
     webpack: ~4||~5
     webpack-dev-server: ^3.11.0
-  checksum: 03593f22937c9dbe3ab7f209a1f454bedde524acaee08e5a725800865b98a283e5297fb0f2b2db5ef67574e84ba5a1b7251ee9417bcac53e66096b28cf73e751
+  checksum: 8405ef8ad69e905bafde576d1c802ba7d87516d9fb16b4a06ff1b6b83082a70b2bd04ffc2ae4a158d32433703b8b65dd4ede3b1d70e28322d954284a185082fe
   languageName: node
   linkType: hard
 
-"razzle-start-server-webpack-plugin@npm:4.0.6":
-  version: 4.0.6
-  resolution: "razzle-start-server-webpack-plugin@npm:4.0.6"
+"razzle-start-server-webpack-plugin@npm:4.1.0":
+  version: 4.1.0
+  resolution: "razzle-start-server-webpack-plugin@npm:4.1.0"
   peerDependencies:
     webpack: ~4||~5
-  checksum: da44c3b7d22ef7be7e16578d3fa7bf977b718d22c4796e660686d549b297a8fbb72715a8a45cd13b5b3ae595f3b29c43500ead99ad6033bd0e99ae443d9b060b
+  checksum: 686e2e83ec0079600621bbda3fd2a70ea46dbcfddbb8b9096936aef58075ce4a0d018088b0dad399ddf6978ef2ee7342f16e69b44f6b60d89dfe6cff62325a55
   languageName: node
   linkType: hard
 
-"razzle@npm:^4.0.6":
-  version: 4.0.6
-  resolution: "razzle@npm:4.0.6"
+"razzle@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "razzle@npm:4.1.0"
   dependencies:
     "@babel/plugin-transform-modules-commonjs": ^7.12.1
     "@pmmmwh/react-refresh-webpack-plugin": ^0.4.3
@@ -12140,7 +12140,7 @@ fsevents@^1.2.7:
     postcss-load-config: ^3.0.0
     postcss-loader: ^4.2.0
     process: ^0.11.10
-    razzle-start-server-webpack-plugin: 4.0.6
+    razzle-start-server-webpack-plugin: 4.1.0
     react-dev-utils: ^11.0.4
     react-refresh: ^0.9.0
     resolve: ^1.17.0
@@ -12155,15 +12155,15 @@ fsevents@^1.2.7:
     webpack-manifest-plugin: ^3.1.1
     webpackbar: ~4||~5
   peerDependencies:
-    babel-preset-razzle: 4.0.6
+    babel-preset-razzle: 4.1.0
     html-webpack-plugin: ~4||~5
     mini-css-extract-plugin: ">=0.9.0 <1.0.0"
-    razzle-dev-utils: 4.0.6
+    razzle-dev-utils: 4.1.0
     webpack: ~4||~5
     webpack-dev-server: ^3.11.0
   bin:
     razzle: bin/razzle.js
-  checksum: 199f0784dc1f4aaa85bba888a9de3f1e537a35b1d3b4a70e96040382ad11b6ef3c3333bb5bec0a1537d1804e464895909498414ce65241e7f60927ee74c1ea31
+  checksum: 60b1d8c64df68c0d3b100bcc42f6b475db27795602141b0af4b010d0c4dd8a9255b43de7801482fcc50c1e667d8602ac54a2424586c60727088fba290284c5f6
   languageName: node
   linkType: hard
 
@@ -12240,9 +12240,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:^5.2.1":
-  version: 5.2.1
-  resolution: "react-router-dom@npm:5.2.1"
+"react-router-dom@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "react-router-dom@npm:5.3.0"
   dependencies:
     "@babel/runtime": ^7.12.13
     history: ^4.9.0
@@ -12253,7 +12253,7 @@ fsevents@^1.2.7:
     tiny-warning: ^1.0.0
   peerDependencies:
     react: ">=15"
-  checksum: d331c9179c291bce798ab7fb041831377a0216e680a031dbf4af6046a02bbbf2ec1215e32bbd1fc0f5a902a37c3ad679de9ae103164b56bf5848749052ac1516
+  checksum: 47584fd629ecca52398d7888cab193b8a74057cc99a7ef44410c405d4082f618c3c0399db5325bc3524f9c511404086169570013b61a94dfa6acdfdc850d7a1f
   languageName: node
   linkType: hard
 
