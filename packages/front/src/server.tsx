@@ -25,28 +25,28 @@ const syncLoadAssets = () => {
 
 syncLoadAssets();
 
-const server = fastify();
+const app = fastify();
 
-server.register(require('point-of-view'), {
+app.register(require('point-of-view'), {
   engine: {
     ejs: require('ejs'),
   },
 });
 
-server.register(fastifyStatic, {
+app.register(fastifyStatic, {
   root: path.join(__dirname, 'public', 'static'),
   prefix: '/static/',
 });
 
-server.get('/favicon.ico', (_, reply) => {
+app.get('/favicon.ico', (_, reply) => {
   reply.sendFile('favicon.ico', path.join(__dirname, 'public'));
 });
 
-server.get('/robots.txt', (_, reply) => {
+app.get('/robots.txt', (_, reply) => {
   reply.sendFile('robots.txt', path.join(__dirname, 'public'));
 });
 
-server.get('/*', (request, reply) => {
+app.get('/*', (request, reply) => {
   const context: StaticRouterContext = {};
 
   const markup = renderToString(
@@ -64,6 +64,6 @@ server.get('/*', (request, reply) => {
 });
 
 export default async (req: IncomingMessage, res: ServerResponse): Promise<void> => {
-  await server.ready();
-  server.server.emit('request', req, res);
+  await app.ready();
+  app.server.emit('request', req, res);
 };
