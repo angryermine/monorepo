@@ -1,36 +1,30 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import {FastifyInstance} from 'fastify';
+import http from 'http';
 
 const PORT = process.env.PORT || 3000;
 
-let app: FastifyInstance = require('./server').default;
+let app: http.RequestListener = require('./server').default;
+const server = http.createServer(app);
 
-function start(instance: FastifyInstance, callback?: (address: string) => void) {
-  instance.listen(PORT, (err, address) => {
-    if (err) {
-      console.error(err);
-    }
-
-    callback?.(address);
-  });
-}
+server.listen(PORT, () => {
+  console.log(`> Server Started on port ${PORT}`);
+});
 
 if (module.hot) {
-  module.hot.accept('./server', () => {
-    console.log('🔁  HMR Reloading `./server`...');
+  module.hot.accept('./server', function () {
+    console.log('🔁 HMR Reloading `./server`...');
 
     try {
-      const hot = require('./server').default;
-      app.server.close(() => start(hot));
-      app = hot;
+      const next: http.RequestListener = require('./server').default;
+      server.removeListener('request', app);
+      server.on('request', next);
+      app = next;
     } catch (error) {
       console.error(error);
     }
+
+    console.log('🚀 Server-side HMR Complete');
   });
 
-  console.info('✅  Server-side HMR Enabled!');
+  console.info('✅ Server-side HMR Enabled!');
 }
-
-export default start(app, (address) => {
-  console.log(`> App started ${address}`);
-});

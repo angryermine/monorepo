@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import fastify from 'fastify';
 import fastifyStatic from 'fastify-static';
+import {IncomingMessage, ServerResponse} from 'http';
 import path from 'path';
 import React from 'react';
 import {renderToString} from 'react-dom/server';
@@ -62,4 +63,7 @@ server.get('/*', (request, reply) => {
   }
 });
 
-export default server;
+export default async (req: IncomingMessage, res: ServerResponse): Promise<void> => {
+  await server.ready();
+  server.server.emit('request', req, res);
+};
